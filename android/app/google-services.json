@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1084268488306",
+    "project_id": "ecommerce-app-product-01",
+    "storage_bucket": "ecommerce-app-product-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084268488306:android:6bd8e792b2990d2283c4eb",
+        "android_client_info": {
+          "package_name": "com.jaydev.ecommerce.ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084268488306-7nkma3rf3qbtil7grru4huk2njdjctt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALJWIyAclt_zFSVlX6G1inmFLjPL8LFVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084268488306-7nkma3rf3qbtil7grru4huk2njdjctt6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1084268488306-2912iaigt2cdjp12fnu9t7bvpr629b4n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jaydev.ecommerce.ecommerceApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
