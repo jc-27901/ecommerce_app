@@ -60,6 +60,6 @@ class MyApp extends StatelessWidget {
     return (SharedPrefSingleton.getData(SharedPrefKeyConstant.onBoarding) ??
             true)
         ? const OnboardingScreen()
-        : const AuthenticationPage();
+        : const HomePage();
   }
 }

@@ -1,7 +1,7 @@
 part of 'package:ecommerce_app/modules/homePage/home_page.dart';
 
 class CategoriesRow extends StatelessWidget {
-  final List<Map<String, dynamic>> categories;
+  final List<CategoryDm> categories;
 
   const CategoriesRow({super.key, required this.categories});
 
@@ -15,17 +15,30 @@ class CategoriesRow extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: InkWell(
               onTap: () {
-                NavigationService.navigateTo(RouteConstants.searchListing);
+                NavigationService.navigateTo(RouteConstants.searchListing,
+                    arguments: category);
               },
               child: CategoryItem(
-                name: category['name'],
-                icon: category['icon'],
+                name: category.name,
+                icon: _getCategoryIcon(category.name),
               ),
             ),
           );
         }).toList(),
       ),
     );
+  }
+
+  IconData _getCategoryIcon(String categoryName) {
+    // You can define a mapping of category names to icons here
+    switch (categoryName.toLowerCase()) {
+      case 'electronics':
+        return Icons.devices;
+      case 'fashion':
+        return Icons.checkroom;
+      default:
+        return Icons.category;
+    }
   }
 }
 
