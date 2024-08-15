@@ -4,5 +4,6 @@ class RouteConstants {
   static const String getStarted = 'get-started';
   static const String homePage = 'home-page';
   static const String searchListing = 'search-listing';
+  static const String productListing = 'product-listing';
 }
 

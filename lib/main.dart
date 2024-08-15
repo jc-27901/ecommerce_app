@@ -1,7 +1,9 @@
+import 'package:ecommerce_app/models/category_dm.dart';
 import 'package:ecommerce_app/modules/authentication/authentication_page.dart';
 import 'package:ecommerce_app/modules/get_started.dart';
 import 'package:ecommerce_app/modules/homePage/home_page.dart';
 import 'package:ecommerce_app/modules/onBoarding/onboarding_steps.dart';
+import 'package:ecommerce_app/modules/productListing/product_listing_page.dart';
 import 'package:ecommerce_app/modules/searchListing/search_listing.dart';
 import 'package:ecommerce_app/utils/app_constants.dart';
 import 'package:ecommerce_app/utils/firebase_options.dart';
@@ -48,6 +50,10 @@ class MyApp extends StatelessWidget {
             return MaterialPageRoute(builder: (_) => const HomePage());
           case RouteConstants.searchListing:
             return MaterialPageRoute(builder: (_) => const SearchListing());
+          case RouteConstants.productListing:
+            return MaterialPageRoute(
+                builder: (_) => ProductListingPage(
+                    selectedCat: settings.arguments as CategoryDm));
           default:
             return MaterialPageRoute(
                 builder: (_) => const AuthenticationPage());

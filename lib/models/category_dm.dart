@@ -29,15 +29,11 @@ class CategoryDm {
       'id': id,
       'name': name,
       'subCategories': {
-        for (var subCategory in subCategories)
-          subCategory.id: subCategory.name
+        for (var subCategory in subCategories) subCategory.id: subCategory.name
       },
     };
   }
 }
-
-
-
 
 class SubCategory {
   final String id;

@@ -15,7 +15,7 @@ class CategoriesRow extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: InkWell(
               onTap: () {
-                NavigationService.navigateTo(RouteConstants.searchListing,
+                NavigationService.navigateTo(RouteConstants.productListing,
                     arguments: category);
               },
               child: CategoryItem(
